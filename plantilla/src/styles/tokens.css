@@ -1,0 +1,19 @@
+/* La identidad de la web: colores, tipografías y medidas.
+   Sites Pro reemplaza estos valores por los del estilo elegido.
+   Las secciones usan solo estas variables: nunca un color o una fuente escrita a mano. */
+
+:root {
+  --fondo: #ffffff;
+  --superficie: #f4f4f5;
+  --texto: #18181b;
+  --texto-suave: #52525b;
+  --acento: #18181b;
+  --sobre-acento: #ffffff;
+  --linea: #e4e4e7;
+
+  --fuente-titulo: system-ui, sans-serif;
+  --fuente-texto: system-ui, sans-serif;
+
+  --radio: 0px;
+  --ancho-max: 76rem;
+}

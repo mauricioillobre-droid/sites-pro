@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+@theme inline {
+  --color-fondo: var(--fondo);
+  --color-superficie: var(--superficie);
+  --color-texto: var(--texto);
+  --color-texto-suave: var(--texto-suave);
+  --color-acento: var(--acento);
+  --color-sobre-acento: var(--sobre-acento);
+  --color-linea: var(--linea);
+  --font-titulo: var(--fuente-titulo);
+  --font-texto: var(--fuente-texto);
+  --radius-base: var(--radio);
+}
+
+html {
+  background: var(--fondo);
+  color: var(--texto);
+  font-family: var(--fuente-texto);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
+.titulo {
+  font-family: var(--fuente-titulo);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 2px solid var(--acento);
+  outline-offset: 3px;
+}
+
+/* Lenis (scroll suave) */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
